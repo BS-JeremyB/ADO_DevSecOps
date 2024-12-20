@@ -1,0 +1,10 @@
+﻿CREATE FUNCTION [dbo].[GetPepper]
+(
+)
+RETURNS NVARCHAR(100)
+AS
+BEGIN
+
+	RETURN 'pepper-16eefd62-4295-4135-b4b1-5ce583d60c28'
+
+END

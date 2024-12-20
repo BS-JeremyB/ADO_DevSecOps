@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{2cf06097-5ad7-4b74-bc73-ffbf0a4a2247}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Stored_Procedures" />
+    <Folder Include="Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Artist.sql" />
@@ -66,8 +67,14 @@
     <Build Include="Tables\Artist_Music.sql" />
     <Build Include="Tables\Music_Genre.sql" />
     <Build Include="Tables\User_.sql" />
+    <Build Include="Stored_Procedures\CreateUser.sql" />
+    <Build Include="Functions\GetPepper.sql" />
+    <Build Include="Stored_Procedures\Login.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DB_Music.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DB_Music.publish.xml" />
   </ItemGroup>
 </Project>
